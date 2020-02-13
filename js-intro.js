@@ -66,7 +66,7 @@ const noVowels1 = str => {
 
     //turn string into an array
 
-    var array1 = stringWithVowels1.split('')
+    var array1 = str.split('')
 
     //create new array where the vowels are omitted. Use .filter method with "not" operator to flush out the vowels
 
@@ -82,7 +82,7 @@ const noVowels1 = str => {
 //use stringWithVowels2.toLowerCase.split('') to turn string to lowercase & included both to remove both vowels without affecting capitalization of other leters.
 
 const noVowels2 = str => {
-    var array2 = stringWithVowels2.split('')
+    var array2 = str.split('')
     var newArr2 = array2.filter(value => value !== 'a' && value !== 'e' && value !== 'I' && value !== 'i' && value !== 'o' && value!== 'u'  )
     return newArr2.join('')
 }
@@ -151,7 +151,7 @@ var noCats = toonimals.filter(value => value.animal !== "cat" )
 
 //created function that pulls only object values relating to "names"
 
-const noCatNames = arr => {
+const noCatNames = () => {
 
   //syntax for pulling out specific information
   //escape character to create external ""
